@@ -3,6 +3,9 @@
 
 #include "h01.h"
 
+/**
+ * 二十一点
+ */
 void two_one_dot(){
 
     char card_name[3];

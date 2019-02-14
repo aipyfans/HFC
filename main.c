@@ -1,10 +1,24 @@
 #include <stdio.h>
-#include "h01.h"
+#include <string.h>
+//#include "h01.h"
+//#include "h02.h"
+#include "h03.h"
 
 int main() {
-    printf("Hello, World!\n");
 
-    two_one_dot();
+//    two_one_dot();
+
+//    getMemoryAddress();
+//    tryPointer();
+//    findSongByWord();
+//    print_reverse("dream");
+
+
+//        map();
+//        map_stderr();
+//    map_section();
+    map_type();
 
     return 0;
 }
+
