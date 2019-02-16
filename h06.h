@@ -6,4 +6,9 @@
  */
 void travel_island();
 
+/**
+ * 实践动态分配堆空间
+ */
+void travel_island2();
+
 #endif //HFC_HEAD_H

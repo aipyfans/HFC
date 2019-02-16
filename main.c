@@ -22,8 +22,8 @@ int main() {
 //    order_pizza();
 
     // 第06章
-    travel_island();
-
+//    travel_island();
+    travel_island2();
     return 0;
 }
 
