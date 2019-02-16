@@ -2,7 +2,8 @@
 #include <string.h>
 //#include "h01.h"
 //#include "h02.h"
-#include "h03.h"
+//#include "h03.h"
+#include "h06.h"
 
 int main() {
 
@@ -17,7 +18,11 @@ int main() {
 //        map();
 //        map_stderr();
 //    map_section();
-    map_type();
+//    map_type();
+//    order_pizza();
+
+    // 第06章
+    travel_island();
 
     return 0;
 }

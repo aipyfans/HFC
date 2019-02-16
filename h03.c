@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <getopt.h>
 
 #include "h03.h"
 
@@ -104,7 +105,51 @@ int map_type(int argc, char *argv[]) {
     return 0;
 }
 
+/**
+ * 主要实践【命令行的参数和选项】
+ *
+ * /HFC Anchovies
+ * /HFC Anchovies Pineapple
+ * /HFC -d now Anchovies Pineapple
+ * /HFC -d now -t Anchovies Pineapple
+ * /HFC -d
+ *
+ * @param argc
+ * @param argv
+ * @return
+ */
+int order_pizza(int argc, char *argv[]) {
+    char *delivery = "";
+    int thick = 0;
+    int count = 0;
+    char ch;
 
+    while ((ch = getopt(argc, argv, "d:t")) != EOF)
+        switch (ch) {
+            case 'd':
+                delivery = optarg;
+                break;
+            case 't':
+                thick = 1;
+                break;
+            default:
+                fprintf(stderr, "Unknown option:'%s'\n", optarg);
+                return 1;
+        }
+    argc -= optind;
+    argv += optind;
+
+    if (thick)
+        puts("Thick crust.");
+
+    if (delivery[0])
+        printf("To be delivered %s.\n", delivery);
+
+    puts("Ingredients:");
+    for (count = 0; count < argc; count++)
+        puts(argv[count]);
+    return 0;
+}
 
 // 重定向标准输入
 //   /Users/william/Dream/WorkSpace/C2pp/HFC/cmake-build-debug/HFC < /Users/william/Dream/WorkSpace/C2pp/HFC/gpsdata.csv
@@ -115,3 +160,4 @@ int map_type(int argc, char *argv[]) {
 // 重定向 - 标准输入 & 标准输出 & 管道
 //   (/Users/william/Dream/WorkSpace/C2pp/HFC/cmake-build-debug/HFCO | /Users/william/Dream/WorkSpace/C2pp/HFC/cmake-build-debug/HFC) < /Users/william/Dream/WorkSpace/C2pp/HFC/gpsdata.csv > /Users/william/Dream/WorkSpace/C2pp/HFC/gpsdata.json
 
+//

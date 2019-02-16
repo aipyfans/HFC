@@ -9,4 +9,6 @@ void map_section();
 
 int map_type();
 
+int order_pizza();
+
 #endif //HFC_HEAD_H
