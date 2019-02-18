@@ -11,4 +11,10 @@ void travel_island();
  */
 void travel_island2();
 
+/**
+ * 1、主要通过【结构】实践【二叉树】数据结构
+ * 2、使用 valgrind 工具查找【存储器泄露】
+ */
+int spies();
+
 #endif //HFC_HEAD_H

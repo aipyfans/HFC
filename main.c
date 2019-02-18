@@ -23,7 +23,11 @@ int main() {
 
     // 第06章
 //    travel_island();
-    travel_island2();
+//    travel_island2();
+    spies();
+
+
+
     return 0;
 }
 
