@@ -3,7 +3,8 @@
 //#include "h01.h"
 //#include "h02.h"
 //#include "h03.h"
-#include "h06.h"
+//#include "h06.h"
+#include "h07.h"
 
 int main() {
 
@@ -24,8 +25,10 @@ int main() {
     // 第06章
 //    travel_island();
 //    travel_island2();
-    spies();
+//    spies();
 
+    // 第07章
+    find_test();
 
 
     return 0;
