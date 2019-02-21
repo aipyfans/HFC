@@ -4,7 +4,8 @@
 //#include "h02.h"
 //#include "h03.h"
 //#include "h06.h"
-#include "h07.h"
+//#include "h07.h"
+#include "h09.h"
 
 int main() {
 
@@ -28,7 +29,11 @@ int main() {
 //    spies();
 
     // 第07章
-    find_test();
+//    find_test();
+
+    // 第09章
+//    test_system();
+    test_exec();
 
 
     return 0;
