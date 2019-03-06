@@ -6,7 +6,8 @@
 //#include "h06.h"
 //#include "h07.h"
 //#include "h09.h"
-#include "h11.h"
+//#include "h11.h"
+#include "h12.h"
 
 int main() {
 
@@ -39,9 +40,11 @@ int main() {
 
     // 第11章
 //    start_server();
-    start_client("O'Reilly_Media");
+//    start_client("O'Reilly_Media");
 
-
+    // 第12章
+//    thread_one();
+    thread_lock();
     return 0;
 }
 
